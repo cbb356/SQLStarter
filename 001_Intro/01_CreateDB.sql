@@ -1,0 +1,18 @@
+CREATE DATABASE MyDB
+ON
+(
+	NAME = 'MyDB',
+	FILENAME = 'D:\MyDB.mdf', 			
+	SIZE = 2MB,
+	MAXSIZE = 10MB,
+	FILEGROWTH = 2MB
+)
+LOG ON
+(
+	NAME = 'LogMyDB',
+	FILENAME = 'D:\MyDB.ldf',
+	SIZE = 1MB,
+	MAXSIZE = 5MB,
+	FILEGROWTH = 1MB
+)
+COLLATE Cyrillic_General_CI_AS
